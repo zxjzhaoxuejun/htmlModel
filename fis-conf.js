@@ -20,6 +20,10 @@ fis.match('/src/pug/(*.pug)', {
     release: '$1'
 });
 
-fis.match('/src/js/(*.js)', {
-    release: 'js/$1'
+fis.match('/src/(js/*)', {
+    release: '$1'
+});
+
+fis.match('/src/(img/*)', {
+    release: '$1'
 });
