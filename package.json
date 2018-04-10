@@ -1,0 +1,19 @@
+{
+  "name": "zac-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "fis3 release -wL",
+    "build": "rimraf ./docs && fis3 release -d ./docs",
+    "server:start": "fis3 server start",
+    "server:stop": "fis3 server stop"
+  },
+  "author": "ZAC FRONTEND TEAM",
+  "license": "ISC",
+  "devDependencies": {
+    "fis3": "^3.4.39",
+    "fis3-parser-less-2.x": "^0.1.4",
+    "fis3-parser-pug": "^1.0.3",
+    "rimraf": "^2.6.2"
+  }
+}
