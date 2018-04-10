@@ -1,6 +1,12 @@
+fis.hook('relative');
+
+fis.match('**', {
+    relative: true
+})
+
 fis.match('*', {
     release: false
-})
+});
 
 fis.match('**/(*.less)', {
     rExt: '.css',

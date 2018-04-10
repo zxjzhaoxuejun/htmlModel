@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "fis3": "^3.4.39",
+    "fis3-hook-relative": "^2.0.3",
     "fis3-parser-less-2.x": "^0.1.4",
     "fis3-parser-pug": "^1.0.3",
     "rimraf": "^2.6.2"
