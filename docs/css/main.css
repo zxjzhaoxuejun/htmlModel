@@ -1,11 +1,16 @@
-body {
-  background-color: skyblue;
-  color: rgba(0, 0, 0, 0.1);
-  background-image: url(../img/rmb.svg);
+* {
+  outline: 1px solid red;
+  border: 10px solid darkcyan;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
+
 .square {
-  width: 100%;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-image: url(../img/rmb.svg);
+  background-size: contain;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }

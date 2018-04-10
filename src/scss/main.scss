@@ -1,0 +1,15 @@
+@import "./partial/variables";
+@import "./partial/mixins";
+
+* {
+  outline: 1px solid red;
+  @include border();
+}
+
+.square {
+  display: flex;
+  background-image: url(../img/rmb.svg);
+  background-size: contain;
+  transform: translate3d(0, 0, 0);
+  transition: transform 3s;
+}
