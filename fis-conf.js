@@ -8,7 +8,7 @@ fis.match('*', {
     release: false
 });
 
-fis.match('**/(*.less)', {
+fis.match('/src/less/(*.less)', {
     rExt: '.css',
     parser: fis.plugin('less-2.x'),
     release: 'css/$1'
