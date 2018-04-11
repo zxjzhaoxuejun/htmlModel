@@ -28,10 +28,10 @@ fis.match('/src/scss/(*.scss)', {
 fis.match('/src/pug/(*.pug)', {
     rExt: '.html',
     parser: fis.plugin('pug'),
-    release: '$1'
+    release: '/$1'
 });
 
-fis.match('/src/(js/*)', {
+fis.match('/src/(js/**)', {
     release: '$1'
 });
 

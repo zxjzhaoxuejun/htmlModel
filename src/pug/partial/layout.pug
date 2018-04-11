@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
@@ -6,8 +6,17 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     //- link(rel="stylesheet", href="../less/main.less")
     link(rel="stylesheet", href="../scss/main.scss")
+    script(src="../js/lib/jquery.min.js")
     script(src="../js/main.js")
     block title
       title Default Boilerplate
   body
+    block header
+      include header.pug
+  
     block main
+
+    h1 HAHA!
+
+    block footer
+      include footer.pug

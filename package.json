@@ -11,6 +11,7 @@
   "author": "ZAC FRONTEND TEAM",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^4.19.1",
     "fis-parser-node-sass": "^1.0.3",
     "fis3": "^3.4.39",
     "fis3-hook-relative": "^2.0.3",
