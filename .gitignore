@@ -8,3 +8,5 @@
 *.css.map
 
 node_modules
+
+yarn-error.log
