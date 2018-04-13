@@ -16,6 +16,9 @@
       "node": true,
       "es6": true,
       "jquery": true
+    },
+    "globals": {
+      "fis": true
     }
   },
   "author": "ZAC FRONTEND TEAM",
