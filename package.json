@@ -13,7 +13,10 @@
   },
   "eslintConfig": {
     "root": true,
-    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
     "env": {
       "browser": true,
       "node": true,
@@ -40,5 +43,7 @@
     "prettier": "^1.13.6",
     "rimraf": "^2.6.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
