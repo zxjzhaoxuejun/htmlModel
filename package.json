@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "fis3 server restart && fis3 release -wL",
-    "build": "rimraf ./dist && fis3 release -d ./dist"
+    "build": "rimraf ./dist && fis3 release build -d ./dist"
   },
   "eslintConfig": {
     "root": true,
@@ -24,7 +24,8 @@
       "jquery": true
     },
     "globals": {
-      "fis": true
+      "fis": true,
+      "axios": true
     }
   },
   "author": "ZAC FRONTEND TEAM",
