@@ -16,6 +16,9 @@ html(lang="en")
     block footer
       include footer.pug
 
+    //- 页面公共脚本
     script(src="../js/lib/jquery-3.3.1.min.js")
     script(src="../js/lib/axios.min.js")
-    script(src="../js/main.js")
+
+  //- 用于单个页面引入的脚本
+  block individual-script
