@@ -9,7 +9,9 @@
   },
   "scripts": {
     "dev": "fis3 server restart && fis3 release -wL",
-    "build": "rimraf ./dist && fis3 release build -d ./dist"
+    "build": "rimraf ./dist && fis3 release build -d ./dist",
+    "sync": "git pull && git push",
+    "stop": "fis3 server stop"
   },
   "eslintConfig": {
     "root": true,
