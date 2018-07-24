@@ -42,20 +42,3 @@ fis.match("/src/(js/**)", {
 fis.match("/src/(img/*)", {
   release: "$1"
 });
-
-fis
-  .media("build")
-  .match("/src/(js/**)", {
-    optimizer: fis.plugin("uglify-js"),
-    useHash: true
-  })
-  .match("**/*.scss", {
-    optimizer: fis.plugin("clean-css"),
-    useHash: true
-  })
-  .match("*.png", {
-    optimizer: fis.plugin("png-compressor")
-  })
-  .match("image", {
-    useHash: true
-  });
