@@ -22,6 +22,7 @@ fis.match("/src/scss/(*.scss)", {
 });
 
 fis.match("/src/pug/(*.pug)", {
+  useCache: false,
   rExt: ".html",
   parser: fis.plugin("pug"),
   release: "/$1"
