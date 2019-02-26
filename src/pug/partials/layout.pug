@@ -17,7 +17,10 @@ html(lang="en")
       include footer.pug
 
     //- 页面公共脚本
-    script(src="../lib/jquery-3.3.1.min.js")
+    script(src="../lib/jquery-1.12.4.min.js")
+    script(src="../lib/jquery.enplaceholder.js")
+    //- 针对 IE 9 及以下版本
+    include ie-polyfill.pug
 
   //- 用于单个页面引入的脚本
   block individual-script

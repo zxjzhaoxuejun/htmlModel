@@ -1,10 +1,121 @@
 extend partials/layout.pug
 
 block title
-  title 开始
+  title 注册
 
 block main
-  .starter(data-before="一片空白，", data-after="是为了重新开始。")
+  .pc-reg
+    .top-mode
+      a(href="").logo
+        img(src="../img/logo.png" alt="logo").img
+    .banner-mode
+      .banner-img
+      .location-view
+        .reg-mode
+          .reg-tilte
+            span.befor-icon
+            span.text-t 用户注册
+            span.after-icon
+
+          .item-input
+            input.input-val.padding-left#tel(type="text",placeholder="请输入您的手机号码")
+            .error-box
+              span.error-icon
+              | 请输入正确的手机号码
+
+          .item-input
+            input.input-val.padding-left#password(type="password",placeholder="请设置登录密码（6-16位）")
+            span.pass-hide
+            .error-box
+              span.error-icon
+              | 请设置正确的密码
+
+          .item-input.item-sub
+            input.input-val.two-input(type="text",placeholder="短信验证码")
+            a.btn.code-default(href="javascript:void(0);") 获取验证码
+            .error-box
+              span.error-icon
+              | 请输入正确的验证码
+          .agree
+            label(for="check-box").check-box
+              i.form-icon
+              | 我已经阅读并接受 
+              input#checkbox(type="hidden", name="" value="0")
+            a.xy-btn(href="javascript:void(0);") 《注册协议》   
+          a.button(href="") 立即注册
+          
+    .info-mode
+      .title 特色产品推荐
+      .info-con
+        .info-list
+          .info-img
+            img(src="../img/icon_boss.png" alt="boss").img
+          dl.info-text
+            dt 老板贷
+            dd 额度:5000-500000元
+            dd 期限:6-24期
+            dd 资料:身份证正反面照片、银行流水授权查询
+        .info-list
+          .info-img
+            img(src="../img/icon_salary.png" alt="salary").img
+          dl.info-text
+            dt 工薪贷
+            dd 额度:3000-50000元
+            dd 期限:6-36期
+            dd 资料:身份证正反面照片、银行流水/社保/公积金授权查询
+        
+    .footer-mode
+      .copy-text 版权所有 &copy;深圳市中安信业小额贷款有限公司
+      .icp-text
+        a(href="") 粤ICP备16075822号-1
+      .tel-text 全国服务热线: 4006-888-188
+
+    <!--验证码输入弹窗-->
+  .modal-mode.code-modal
+    .modal-bg
+    .modal-con
+      .close
+        span.close-icon
+      .modal-title 请输入图形验证码
+      .modal-body
+        .item-input.error-info
+          input.input-val.padding-left(type="type",placeholder="请输入验证码")
+          .error-box
+            span.error-icon
+            | 请输入正确的验证码
+        .code-img
+          img.bit-map(src="../img/Bitmap@2x.png",alt="验证码")
+          a.refresh(href="javascript:void(0);") 看不清楚？换一张
+        a.modal-btn(href="javascript:void(0);") 确认
+
+  <!--手机号码已注册弹窗-->
+  .modal-mode.registered-modal
+    .modal-bg
+    .modal-con
+      .close
+        span.close-icon
+      .modal-body
+        .info-con
+          .info-title 该手机号已注册
+          .info-text 您可以直接下载APP进行申请
+        a.modal-btn(href="javascript:void(0);") 确认
+
+  <!--注册成功弹窗-->
+  .modal-mode.succeed-modal
+    .modal-bg
+    .modal-con.succeed-con
+      .modal-body
+        .s-list
+          .succeed-title 注册成功
+          .succeed-text 扫描二维码、下载新APP
+          img(src='../img/qr_code.png' alt='二维码').qcord
+          .sq-speed
+            .speed-list
+              .icon-j.s-icon
+              | 极速授权
+            .speed-list.sh-hover
+              .icon-j.h-icon.active
+              | 快速审核
 
 block individual-script
   script(src="../js/main.js")
